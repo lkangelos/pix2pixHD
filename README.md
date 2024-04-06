@@ -95,6 +95,11 @@ python train.py --name label2city_512p
 - To view training results, please checkout intermediate results in `./checkpoints/label2city_512p/web/index.html`.
 If you have tensorflow installed, you can see tensorboard logs in `./checkpoints/label2city_512p/logs` by adding `--tf_log` to the training scripts.
 
+```bash
+#!./scripts/train_512p.sh
+python train.py --name clean2haze_512p --no_instance True
+```
+
 ### Multi-GPU training
 - Train a model using multiple GPUs (`bash ./scripts/train_512p_multigpu.sh`):
 ```bash
